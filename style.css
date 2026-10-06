@@ -3,8 +3,8 @@
 :root {
     color-scheme: dark;
     font-family: "Nunito", "Noto Sans JP", sans-serif;
-    background: #10172b;
-    color: #f5f7ff;
+    background: #080817;
+    color: #e9fdff;
     font-synthesis: none;
 }
 
@@ -18,9 +18,9 @@ body {
     margin: 0;
     padding: 28px 20px;
     background:
-        radial-gradient(circle at top, rgba(94, 140, 255, .36), transparent 28%),
-        radial-gradient(circle at bottom, rgba(47, 214, 181, .22), transparent 28%),
-        linear-gradient(180deg, #0b1329 0%, #121d39 32%, #0a1020 100%);
+        radial-gradient(ellipse at 8% 15%, rgba(255, 42, 180, .18), transparent 32%),
+        radial-gradient(ellipse at 90% 82%, rgba(0, 239, 255, .16), transparent 34%),
+        linear-gradient(145deg, #080817 0%, #11102d 48%, #080b1a 100%);
 }
 
 button {
@@ -49,7 +49,7 @@ button {
     font-weight: 900;
     letter-spacing: .02em;
     text-decoration: none;
-    text-shadow: 0 2px 12px rgba(109, 162, 255, .4);
+    text-shadow: 0 0 8px rgba(0, 239, 255, .75), 0 0 22px rgba(0, 239, 255, .28);
 }
 
 .brand-mark {
@@ -57,27 +57,27 @@ button {
     width: 34px;
     height: 34px;
     place-items: center;
-    border: 1px solid rgba(255, 255, 255, .18);
-    border-radius: 11px;
-    background: linear-gradient(145deg, #ffd878, #ff9e65 48%, #ff7e7a);
-    color: #51384d;
+    border: 1px solid rgba(0, 239, 255, .75);
+    border-radius: 10px;
+    background: linear-gradient(145deg, #21efff, #8071ff 55%, #ff3fc8);
+    color: #090d24;
     font-size: 19px;
-    box-shadow: 0 8px 24px rgba(255, 156, 100, .4);
+    box-shadow: 0 0 14px rgba(0, 239, 255, .45), 0 0 28px rgba(255, 63, 200, .25);
 }
 
 .tagline {
     margin: 0;
-    color: #b9c7ea;
+    color: #9da9d2;
     font-size: 13px;
     letter-spacing: .04em;
 }
 
 .game-card {
     overflow: hidden;
-    border: 1px solid rgba(159, 181, 255, .26);
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgba(31, 42, 77, .96), rgba(18, 24, 43, .98));
-    box-shadow: 0 28px 80px rgba(3, 8, 20, .45), 0 0 0 1px rgba(143, 186, 255, .1);
+    border: 1px solid rgba(0, 239, 255, .42);
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(18, 22, 53, .98), rgba(8, 11, 29, .99));
+    box-shadow: 0 28px 80px rgba(3, 5, 18, .65), 0 0 0 1px rgba(255, 55, 210, .12), 0 0 32px rgba(0, 239, 255, .12);
 }
 
 .hud {
@@ -86,74 +86,84 @@ button {
     align-items: center;
     gap: 20px;
     padding: 0 17px;
-    background: linear-gradient(180deg, rgba(22, 31, 58, .95), rgba(18, 24, 43, .94));
-    border-bottom: 1px solid rgba(146, 172, 255, .12);
+    background: linear-gradient(90deg, rgba(17, 22, 53, .98), rgba(25, 13, 53, .96));
+    border-bottom: 1px solid rgba(0, 239, 255, .28);
 }
 
 .hud-item {
     display: flex;
     align-items: center;
     padding: 7px 10px;
-    border: 1px solid rgba(150, 177, 255, .14);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, .04);
+    border: 1px solid rgba(0, 239, 255, .24);
+    border-radius: 7px;
+    background: rgba(4, 12, 34, .72);
     font-size: 15px;
     font-weight: 900;
 }
 
 .score-item {
     padding: 5px 13px;
-    border-color: rgba(255, 209, 108, .55);
-    background: linear-gradient(135deg, rgba(255, 209, 108, .2), rgba(255, 158, 101, .12));
-    color: #fff4ce;
+    border-color: rgba(255, 220, 83, .78);
+    background: linear-gradient(135deg, rgba(255, 220, 83, .17), rgba(255, 63, 200, .1));
+    color: #fff6b5;
     font-size: 25px;
     line-height: 1;
-    box-shadow: 0 0 18px rgba(255, 196, 90, .18), inset 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: 0 0 18px rgba(255, 220, 83, .2), inset 0 1px 0 rgba(255, 255, 255, .1);
 }
 
 .hud-icon {
     margin-right: 7px;
-    color: #ffd16c;
+    color: #ffe45e;
     font-size: 20px;
-    filter: drop-shadow(0 0 10px rgba(255, 209, 108, .4));
+    filter: drop-shadow(0 0 10px rgba(255, 228, 94, .72));
 }
 
 .hud-label {
     margin-left: 3px;
-    color: #9ba8c5;
+    color: #8796c6;
     font-size: 12px;
     font-weight: 700;
 }
 
 .hearts {
-    color: #ff8297;
+    color: #ff5cb8;
     letter-spacing: 3px;
-    text-shadow: 0 0 10px rgba(255, 130, 151, .4);
+    text-shadow: 0 0 8px rgba(255, 50, 174, .8);
 }
 
 .restart-button {
     margin-left: auto;
     padding: 7px 12px;
-    border: 1px solid rgba(255, 255, 255, .14);
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(108, 133, 194, .12));
-    color: #dce4fa;
+    border: 1px solid rgba(255, 65, 208, .45);
+    border-radius: 7px;
+    background: linear-gradient(180deg, rgba(255, 65, 208, .13), rgba(108, 78, 194, .13));
+    color: #f2dfff;
     cursor: pointer;
     font-size: 13px;
     transition: transform .15s ease, border-color .15s ease, background .15s ease;
 }
 
 .restart-button:hover {
-    border-color: rgba(255, 255, 255, .3);
-    background: rgba(255, 255, 255, .12);
+    border-color: rgba(0, 239, 255, .85);
+    background: rgba(0, 239, 255, .14);
+    box-shadow: 0 0 14px rgba(0, 239, 255, .2);
     transform: translateY(-1px);
 }
 
 .canvas-wrap {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(180deg, #91d9ef 0%, #bfeaf7 100%);
-    box-shadow: inset 0 0 28px rgba(76, 125, 180, .18);
+    background: #090b20;
+    box-shadow: inset 0 0 34px rgba(0, 239, 255, .12);
+}
+
+.canvas-wrap::after {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background: repeating-linear-gradient(0deg, transparent 0 3px, rgba(2, 5, 20, .12) 4px 5px);
+    content: "";
+    pointer-events: none;
 }
 
 canvas {
@@ -165,11 +175,12 @@ canvas {
 
 .message {
     position: absolute;
+    z-index: 2;
     inset: 0;
     display: grid;
     place-items: center;
     padding: 20px;
-    background: rgba(12, 22, 36, .46);
+    background: rgba(5, 7, 24, .62);
     backdrop-filter: blur(5px);
 }
 
@@ -180,11 +191,11 @@ canvas {
 .message-card {
     width: min(100%, 340px);
     padding: 28px;
-    border: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 18px;
-    background: linear-gradient(180deg, rgba(32, 43, 71, .96), rgba(22, 31, 50, .96));
+    border: 1px solid rgba(0, 239, 255, .5);
+    border-radius: 12px;
+    background: linear-gradient(145deg, rgba(18, 22, 56, .98), rgba(30, 12, 48, .98));
     text-align: center;
-    box-shadow: 0 18px 55px rgba(0, 0, 0, .35), 0 0 24px rgba(130, 160, 255, .12);
+    box-shadow: 0 18px 55px rgba(0, 0, 0, .5), 0 0 28px rgba(0, 239, 255, .16);
 }
 
 .message-icon {
@@ -199,24 +210,24 @@ canvas {
 
 .message-card p {
     margin: 0 0 20px;
-    color: #bac5df;
+    color: #aebce4;
     font-size: 14px;
 }
 
 .message-card button {
     width: 100%;
     padding: 11px 18px;
-    border: 0;
-    border-radius: 10px;
-    background: linear-gradient(180deg, #ffe08b, #ffc76d);
-    color: #352943;
+    border: 1px solid rgba(0, 255, 255, .85);
+    border-radius: 7px;
+    background: linear-gradient(100deg, #00eaff, #a2fffb);
+    color: #071426;
     cursor: pointer;
     font-weight: 900;
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.45), 0 10px 18px rgba(255, 181, 77, .22);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.45), 0 0 22px rgba(0, 234, 255, .35);
 }
 
 .message-card button:hover {
-    background: linear-gradient(180deg, #ffeb9f, #ffd16c);
+    background: linear-gradient(100deg, #a2fffb, #e5ffff);
 }
 
 .controls {
@@ -227,7 +238,7 @@ canvas {
     display: flex;
     align-items: center;
     gap: 22px;
-    color: #aab5d0;
+    color: #9ba9d1;
     font-size: 12px;
 }
 
@@ -240,11 +251,11 @@ canvas {
 kbd {
     min-width: 24px;
     padding: 3px 6px;
-    border: 1px solid rgba(208, 219, 249, .18);
+    border: 1px solid rgba(0, 239, 255, .34);
     border-bottom-width: 2px;
     border-radius: 5px;
-    background: linear-gradient(180deg, #2a3659, #1f2745);
-    color: #eef2ff;
+    background: linear-gradient(180deg, #20264e, #131832);
+    color: #d8fdff;
     font-family: inherit;
     font-size: 11px;
     font-weight: 800;
@@ -254,7 +265,7 @@ kbd {
 
 .tip {
     margin: 12px 0 0;
-    color: #8ea1c9;
+    color: #8292be;
     font-size: 12px;
 }
 
@@ -326,10 +337,10 @@ kbd {
     .touch-button {
         width: 56px;
         height: 48px;
-        border: 1px solid rgba(208, 219, 249, .16);
-        border-radius: 12px;
-        background: #222e4b;
-        color: #eef2ff;
+        border: 1px solid rgba(0, 239, 255, .42);
+        border-radius: 8px;
+        background: linear-gradient(145deg, #1d2850, #121832);
+        color: #d8fdff;
         cursor: pointer;
         font-size: 22px;
         font-weight: 900;
@@ -338,12 +349,13 @@ kbd {
     }
 
     .touch-button:active {
-        background: #35466d;
+        background: #214862;
+        box-shadow: 0 0 16px rgba(0, 239, 255, .28);
     }
 
     .jump-button {
         width: 100px;
-        background: #303d60;
+        background: linear-gradient(145deg, #45306c, #1a4560);
         font-size: 14px;
     }
 
