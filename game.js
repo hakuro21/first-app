@@ -13,6 +13,7 @@ const WORLD_WIDTH = 2700;
 const GRAVITY = 1800;
 const MOVE_SPEED = 270;
 const JUMP_SPEED = 670;
+const ENEMY_SPEED = 120;
 const TOTAL_STARS = 8;
 
 const platforms = [
@@ -37,9 +38,12 @@ const stars = [
 ].map((star) => ({ ...star, collected: false, phase: Math.random() * Math.PI * 2 }));
 
 const enemyStarts = [
-    { x: 760, min: 700, max: 1190 },
-    { x: 1530, min: 1360, max: 1980 },
-    { x: 2220, min: 2140, max: 2600 }
+    { x: 740, min: 700, max: 960 },
+    { x: 990, min: 970, max: 1190 },
+    { x: 1400, min: 1360, max: 1650 },
+    { x: 1700, min: 1680, max: 1980 },
+    { x: 2180, min: 2140, max: 2390 },
+    { x: 2440, min: 2420, max: 2600 }
 ];
 
 const player = {
@@ -141,7 +145,7 @@ function movePlayer(dt) {
 function updateEnemies(dt) {
     for (const enemy of enemies) {
         if (!enemy.alive) continue;
-        enemy.x += enemy.direction * 75 * dt;
+        enemy.x += enemy.direction * ENEMY_SPEED * dt;
         if (enemy.x < enemy.min || enemy.x + enemy.width > enemy.max) enemy.direction *= -1;
         const overlaps = player.x + player.width > enemy.x && player.x < enemy.x + enemy.width
             && player.y + player.height > enemy.y && player.y < enemy.y + enemy.height;

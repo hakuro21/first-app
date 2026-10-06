@@ -101,6 +101,16 @@ button {
     font-weight: 900;
 }
 
+.score-item {
+    padding: 5px 13px;
+    border-color: rgba(255, 209, 108, .55);
+    background: linear-gradient(135deg, rgba(255, 209, 108, .2), rgba(255, 158, 101, .12));
+    color: #fff4ce;
+    font-size: 25px;
+    line-height: 1;
+    box-shadow: 0 0 18px rgba(255, 196, 90, .18), inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
 .hud-icon {
     margin-right: 7px;
     color: #ffd16c;
@@ -289,6 +299,11 @@ kbd {
 
     .hud-item {
         font-size: 14px;
+    }
+
+    .score-item {
+        padding: 5px 10px;
+        font-size: 21px;
     }
 
     .restart-button {
